@@ -1,0 +1,90 @@
+
+ 
+<!--schedule section start-->
+<section class="event schedule set-relative" id="schedule">
+    <div class="circle"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2><span>our</span> schedule</h2>
+                    </div>
+                    <div class="sub-title">
+                        <P>Our exhibitors tell us they come back every year because The
+                            <span>Cork Book Fair</span> provides them with the perfect
+                            platform to engage with customers, demonstrate their products,
+                            build brand awareness, conduct face to face business, and - most
+                            importantly - make sales.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="cal-time">
+                    <div class="time">
+                        <h4 class="text-capitalize monday-text">Monday, March 02, 2020</h4>
+                    </div>
+                </div>
+                <div class="event-container scrollbar">
+                    <div>
+                        <div class="cal-time events" *ngFor="let data of schedule">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="schedule-event">
+                                        <h5 class="names">{{ data.name }}</h5>
+                                        <img [src]="data.icon" alt="" class="img-fluid schedule-img" />
+                                        <p class="schedule-description">{{ data.description }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="timing">
+                                        <h5 class="event-time">{{ data.totime }}</h5>
+                                        <div class="border-container">
+                                            <div class="border-dashed"></div>
+                                        </div>
+                                        <h5 class="event-time">{{ data.endtime }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="cal-time">
+                    <div class="time">
+                        <h4 class="text-capitalize tuesday-text">
+                            Tuesday, March 03, 2020
+                        </h4>
+                    </div>
+                </div>
+                <div class="event-container scrollbar">
+                    <div>
+                        <div class="cal-time events" *ngFor="let data of scheduleOne">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="schedule-event">
+                                        <h5 class="names">{{ data.name }}</h5>
+                                        <img [src]="data.icon" alt="" class="img-fluid schedule-img" />
+                                        <p class="schedule-description">{{ data.description }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="timing">
+                                        <h5 class="event-time">{{ data.totime }}</h5>
+                                        <div class="border-container">
+                                            <div class="border-dashed"></div>
+                                        </div>
+                                        <h5 class="event-time">{{ data.endtime }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--schedule section end-->

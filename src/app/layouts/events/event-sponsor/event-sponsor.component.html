@@ -1,0 +1,36 @@
+<!--sponsor section start-->
+<section class="event sponsor set-relative bg bg-img2 bg-about">
+  <div class="container set-margin">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <div class="title title3">
+          <div class="main-title">
+            <h2 class=" text-white">sponsor</h2>
+          </div>
+          <div class="sub-title">
+            <P class="text-white"
+              >We have a wide range of opportunities for you to promote your
+              brand at The <span>Cork Book Fair</span>. Whether you want to be
+              seen as a thought leader, gain brand exposure or attract attendees
+              to your stand we have an option for you.<span
+                >So, Register your business</span
+              >
+              to reserve the space now!</P
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-3 col-sm-4 col-6 sponsor-img"
+        *ngFor="let data of sponsor"
+      >
+        <div class="text-center">
+          <a href="javascript:void()"
+            ><img [src]="data.img" alt="" class="img-fluid"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--sponsor section end-->
